@@ -1,5 +1,5 @@
 <template>
-  <div class="location">
+  <div class="locations">
     <h1>Locations</h1>
     <h2>Nepomuki Szent János Templom</h2>
     <Map query="Anna+Tanya,Törökbálint" />
@@ -12,7 +12,7 @@
 import Map from '@/components/Map.vue'
 
 export default {
-  name: 'Location',
+  name: 'Locations',
   components: {
     Map
   }
