@@ -1,7 +1,7 @@
 <template>
   <iframe
     class="map"
-    loading="lazy"
+    loading="eager"
     allowfullscreen
     :src="`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${query}`">
   </iframe>
