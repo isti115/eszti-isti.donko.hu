@@ -1,9 +1,6 @@
 <template>
-  <div class="locations">
-    <h1>Locations</h1>
+  <div id="church" class="slide location">
     <h2>Nepomuki Szent János Templom</h2>
-    <Map query="Anna+Tanya,Törökbálint" />
-    <h2>Anna Tanya</h2>
     <Map query="Nepomuki+Szent+János+Templom,Budaörs" />
   </div>
 </template>
@@ -12,7 +9,7 @@
 import Map from '@/components/Map.vue'
 
 export default {
-  name: 'Locations',
+  name: 'Church',
   components: {
     Map
   }
@@ -20,8 +17,16 @@ export default {
 </script>
 
 <style scoped>
+.location > div {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+}
+
 .map {
-  width: 500px;
-  height: 400px;
+  width: 90%;
+  height: 70%;
+
+  margin-top: 3%;
 }
 </style>
