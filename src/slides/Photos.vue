@@ -1,7 +1,6 @@
 <template>
-  <div id="story" class="slide">
-    <h2>Történet</h2>
-    <span>Eszti</span>
+  <div id="photos" class="slide">
+    <h2></h2>
   </div>
 </template>
 

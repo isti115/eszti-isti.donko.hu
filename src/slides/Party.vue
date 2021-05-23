@@ -17,6 +17,10 @@ export default {
 </script>
 
 <style scoped>
+#party {
+background-color: rgb(226,229,222);
+}
+
 .location > div {
   display: inline-block;
   width: 50%;

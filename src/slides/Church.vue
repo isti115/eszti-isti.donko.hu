@@ -1,6 +1,10 @@
 <template>
   <div id="church" class="slide location">
-    <h2>Nepomuki Szent János Templom</h2>
+    <div id="text">
+      <h2>Nepomuki Szent János Templom</h2>
+      <p>A templomi szertartás 16 órakkor kezdődik..</p>
+      <p>Utána szerettettel várunk a templomkertbe egy kis sütire, beszélgetésre és ...</p>
+    </div>
     <Map query="Nepomuki+Szent+János+Templom,Budaörs" />
   </div>
 </template>
@@ -17,16 +21,20 @@ export default {
 </script>
 
 <style scoped>
-.location > div {
-  display: inline-block;
-  width: 50%;
-  height: 100%;
+#church {
+  background-color: rgb(213,216,206);
+  display: flex;
+  justify-content: space-between;
+}
+
+.text{
+  width: 40%;
 }
 
 .map {
-  width: 90%;
-  height: 70%;
+  /* object-fit: contain; */
+  width: 40%;
 
-  margin-top: 3%;
+  /* margin-top: 3%; */
 }
 </style>

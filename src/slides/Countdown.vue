@@ -1,10 +1,19 @@
 <template>
   <div id="countdown" class="slide">
-    <h2>Countdown</h2>
-    <span>
-      Még {{ days }} nap, {{ hours }} óra, {{ minutes }} perc
-      és {{ seconds }} másodperc van hátra.
-    </span>
+    <div id="text">
+      <h2>Hamarosan találkozunk!</h2>
+      <p>Egészen pontosan még</p>
+      <p>{{ days }} nap,</p>
+      <p>{{ hours }} óra,</p>
+      <p>{{ minutes }} perc</p>
+      <p>{{ seconds }} másodperc</p>
+      <p>van hátra.</p>
+      <!-- <span>
+        Egészen pontosan még {{ days }} nap, {{ hours }} óra, {{ minutes }} perc
+        és {{ seconds }} másodperc van hátra.
+      </span> -->
+    </div>
+    <img src="@/assets/images/test.jpg" />
   </div>
 </template>
 
@@ -35,4 +44,24 @@ export default {
 </script>
 
 <style scoped>
+#countdown {
+  background-color: rgb(190,196,171);
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+#text{
+  width: 50%;
+}
+
+#text h2{
+  margin-bottom: 50px;
+}
+
+#countdown img {
+  /* flex: 1; */
+  object-fit: cover;
+  width: 50%;
+}
 </style>

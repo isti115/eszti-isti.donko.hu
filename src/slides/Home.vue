@@ -1,12 +1,12 @@
 <template>
   <div id="home" class="slide">
-    <img src="@/assets/images/top.png" />
-    <div>Eszti & Isti</div>
+    <img id="leaves" src="@/assets/images/plants.png" />
+    <img id="name" src="@/assets/images/név.png" />
     <nav>
-      <a href="#home">Kezdőlap</a>
       <a href="#story">Történet</a>
       <a href="#church">Esküvő</a>
       <a href="#party">Lakodalom</a>
+      <a href="#photos">Fényképek</a>
       <a href="#countdown">Visszaszámlálás</a>
     </nav>
   </div>
@@ -19,13 +19,25 @@
 
   justify-content: space-around;
 
-  background-color: rgb(190, 230, 180);
+  background-color: rgb(230,231,226);
   /* object-fit: cover; */
+  display: block;
+  text-align: center;
 }
 
-#home img {
+#leaves {
   width: 100%;
-  height: 20%;
+  /* height: 20%; */
+}
+
+#name {
+margin-top: 30px;
+margin-bottom: 110px;
+}
+
+img {
+  width: 50%;
+
 }
 
 nav {
