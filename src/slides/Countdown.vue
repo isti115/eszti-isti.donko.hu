@@ -1,5 +1,6 @@
 <template>
   <div id="countdown" class="slide">
+    <GoHome />
     <h2>Countdown</h2>
     <span>
       Még {{ days }} nap, {{ hours }} óra, {{ minutes }} perc
@@ -9,8 +10,13 @@
 </template>
 
 <script>
+import GoHome from '@/components/GoHome.vue'
+
 export default {
   name: 'Countdown',
+  components: {
+    GoHome
+  },
   async mounted () {
     setInterval(this.update, 1000)
   },

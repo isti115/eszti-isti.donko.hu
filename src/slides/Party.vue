@@ -1,16 +1,19 @@
 <template>
   <div id="party" class="slide location">
+    <GoHome />
     <h2>Anna Tanya</h2>
     <Map query="Anna+Tanya,Törökbálint" />
   </div>
 </template>
 
 <script>
+import GoHome from '@/components/GoHome.vue'
 import Map from '@/components/Map.vue'
 
 export default {
   name: 'Party',
   components: {
+    GoHome,
     Map
   }
 }
