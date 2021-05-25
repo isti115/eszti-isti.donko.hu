@@ -1,5 +1,6 @@
 <template>
   <div id="church" class="slide location">
+    <GoHome />
     <div id="text">
       <h2>Nepomuki Szent János Templom</h2>
       <p>A templomi szertartás 16 órakkor kezdődik..</p>
@@ -10,11 +11,13 @@
 </template>
 
 <script>
+import GoHome from '@/components/GoHome.vue'
 import Map from '@/components/Map.vue'
 
 export default {
   name: 'Church',
   components: {
+    GoHome,
     Map
   }
 }
