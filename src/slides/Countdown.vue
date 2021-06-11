@@ -4,10 +4,12 @@
     <div id="text">
       <h2>Hamarosan találkozunk!</h2>
       <p>Egészen pontosan még</p>
-      <p>{{ days }} nap,</p>
-      <p>{{ hours }} óra,</p>
-      <p>{{ minutes }} perc</p>
-      <p>{{ seconds }} másodperc</p>
+      <table>
+        <tr><td>{{ days }}</td><td>nap,</td></tr>
+        <tr><td>{{ hours }}</td><td>óra,</td></tr>
+        <tr><td>{{ minutes }}</td><td>perc,</td></tr>
+        <tr><td>{{ seconds }}</td><td>másodperc</td></tr>
+      </table>
       <p>van hátra.</p>
       <!-- <span>
         Egészen pontosan még {{ days }} nap, {{ hours }} óra, {{ minutes }} perc
@@ -63,6 +65,20 @@ export default {
 
 #text h2{
   margin-bottom: 50px;
+}
+
+table {
+  margin: auto;
+}
+
+td:nth-child(1) {
+  width: 50px;
+  text-align: right;
+}
+
+td:nth-child(2) {
+  padding-left: 10px;
+  text-align: left;
 }
 
 #countdown img {
