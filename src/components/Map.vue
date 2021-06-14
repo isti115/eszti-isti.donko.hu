@@ -1,18 +1,35 @@
 <template>
-  <iframe
-    class="map"
-    loading="eager"
-    allowfullscreen
-    :src="`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${query}`">
-  </iframe>
+  <div class="map" ref="map"></div>
 </template>
 
 <script>
+import makeMap from '../map-factory.js'
+
 export default {
   name: 'Map',
-  props: ['query'],
-  data: () => ({
-    apiKey: 'AIzaSyA-K15B0HmJ0AD-sQw7TDijQoMdlA1sz6s'
-  })
+  props: ['options'],
+  mounted () {
+    makeMap(this.$refs.map, this.options)
+  }
 }
 </script>
+
+<style>
+.gm-style-iw button {
+  display: none !important;
+}
+
+.gm-style-iw, .gm-style-iw-t:after {
+  background: #f5f1e6 !important;
+  user-select: none;
+}
+
+/* .navlink { */
+/*   cursor: pointer; */
+/* } */
+
+.navlink svg {
+  width: 30px;
+  fill: #abb97c;
+}
+</style>
