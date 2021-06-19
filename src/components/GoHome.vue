@@ -1,6 +1,6 @@
 <template>
   <a href="#home">
-    <img src="@/assets/images/house.svg" />
+    <img src="@/assets/images/up.svg" />
   </a>
 </template>
 
@@ -12,11 +12,18 @@ export default {
 
 <style scoped>
 a {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+
+  color: red;
 }
 </style>
