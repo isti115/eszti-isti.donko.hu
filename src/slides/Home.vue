@@ -14,10 +14,12 @@
 
 <style scoped>
 #home {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
   align-items: center;
-  justify-content: space-between;
+  justify-items: center;
+  grid-template-rows: 1fr 1fr 1fr;
 
   padding: 0;
 
@@ -34,6 +36,8 @@
 
   object-fit: cover;
   object-position: bottom;
+
+  align-self: start;
 }
 
 #name {
@@ -56,6 +60,8 @@
 
   #name {
     width: 90%;
+
+    align-self: start;
   }
 }
 
