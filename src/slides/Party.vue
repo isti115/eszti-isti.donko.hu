@@ -1,7 +1,11 @@
 <template>
   <div id="party" class="slide location">
     <GoHome />
-    <h2>Anna Tanya</h2>
+  <div id="text">
+      <h2>Anna Tanya</h2>
+      <p>19 órakkor..</p>
+      <p>minden ...</p>
+    </div>
     <Map :options="mapOptions" />
   </div>
 </template>
@@ -44,18 +48,18 @@ export default {
 <style scoped>
 #party {
   background-color: rgb(226,229,222);
+  display: flex;
+  justify-content: space-between;
 }
 
-.location > div {
-  display: inline-block;
-  width: 50%;
-  height: 100%;
+.text{
+  width: 40%;
 }
 
 .map {
-  width: 90%;
-  height: 70%;
+  /* object-fit: contain; */
+  width: 40%;
 
-  margin-top: 3%;
+  /* margin-top: 3%; */
 }
 </style>
