@@ -3,18 +3,23 @@
     <GoHome />
     <div id="text">
       <h2>Hamarosan találkozunk!</h2>
-      <p>Egészen pontosan még</p>
-      <table>
-        <tr><td>{{ days }}</td><td>nap,</td></tr>
-        <tr><td>{{ hours }}</td><td>óra,</td></tr>
-        <tr><td>{{ minutes }}</td><td>perc,</td></tr>
-        <tr><td>{{ seconds }}</td><td>másodperc</td></tr>
-      </table>
-      <p>van hátra.</p>
-      <!-- <span>
-        Egészen pontosan még {{ days }} nap, {{ hours }} óra, {{ minutes }} perc
-        és {{ seconds }} másodperc van hátra.
-      </span> -->
+      <div id="vertical">
+        <p>Egészen pontosan még</p>
+        <table>
+          <tr><td>{{ days }}</td><td>nap,</td></tr>
+          <tr><td>{{ hours }}</td><td>óra,</td></tr>
+          <tr><td>{{ minutes }}</td><td>perc,</td></tr>
+          <tr><td>{{ seconds }}</td><td>másodperc</td></tr>
+        </table>
+        <p>van hátra.</p>
+      </div>
+      <div id="horizontal">
+        <span>
+          Egészen pontosan még {{ days }}&nbsp;nap, {{ hours }}&nbsp;óra és {{ minutes }}&nbsp;perc
+          <!-- és {{ seconds }} másodperc -->
+          van hátra.
+        </span>
+      </div>
     </div>
     <img src="@/assets/images/test.jpg" />
   </div>
@@ -59,11 +64,15 @@ export default {
   align-items: stretch;
 }
 
-#text{
+#text {
   width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#text h2{
+#text h2 {
   margin-bottom: 50px;
 }
 
@@ -85,5 +94,23 @@ td:nth-child(2) {
   /* flex: 1; */
   object-fit: cover;
   width: 50%;
+}
+
+@media (max-width: 800px) {
+  #text {
+    width: 100%;
+  }
+
+  #countdown img {
+    display: none;
+  }
+}
+
+#vertical { display: block; }
+#horizontal { display: none; }
+
+@media (max-height: 470px) {
+  #horizontal { display: block; }
+  #vertical { display: none; }
 }
 </style>
