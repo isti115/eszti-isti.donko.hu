@@ -5,7 +5,7 @@ const loader = new Loader({
   apiKey: 'AIzaSyA-K15B0HmJ0AD-sQw7TDijQoMdlA1sz6s',
   version: 'weekly',
   libraries: ['places'],
-  url: 'http://maps.googleapis.com/maps/api/js'
+  url: `${window.location.protocol}//maps.googleapis.com/maps/api/js`
 })
 
 export default (element, options) => {
