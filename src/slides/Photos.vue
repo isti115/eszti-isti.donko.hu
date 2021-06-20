@@ -1,7 +1,8 @@
 <template>
   <div id="photos" class="slide">
-    <a href="https://photos.google.com/share/AF1QipMhk9D_OCjbiDrHBwh55saHYiGkiYKS1AWroFGgW848QoFIE31Xdi5xQ63OlG1opg?key=TWtDVzV3eTJFQll2Z3A2N3hWUzc3c0w0U3F6OTVR" target="_blank">
+    <a href="https://photos.app.goo.gl/g2MpaGPw7e7U4Fe1A" target="_blank">
       <span>"Az esküvő képeit itt fogod megtalálni!"</span>
+      <br />
       <img id="right" src="@/assets/images/right.svg" />
     </a>
     <img id="p1" src="@/assets/images/photos/skiing.jpg" />
@@ -21,7 +22,7 @@ export default {
 
 <style scoped>
 #photos {
-  background-color: rgb(196, 203, 185);
+  background-color: rgb(240, 242, 235);
   padding: 50px;
 
   display: grid;
@@ -34,6 +35,21 @@ export default {
     "p1 p2 p2 p3"
     "p4 p4 p5 p3"
     "p4 p4 p6 p7";
+}
+
+@media (max-width: 800px) {
+  #photos {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+      "p1 p2 p2"
+      "p4 p4 p3"
+      "p4 p4 p3"
+      "p5 p5 p7";
+  }
+
+  #p6 { display: none; }
 }
 
 img {
@@ -68,12 +84,19 @@ img {
 
 a {
   grid-area: p7;
-  display: inline-block;
+  /* display: inline-block; */
+  text-decoration: none;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+a img {
+  margin: -30px;
 }
 
 #right {
-  width: 40%;
-  height: 70%;
+  width: 50%;
+  height: 50%;
 
   /* min-width: 0;
   min-height: 0;

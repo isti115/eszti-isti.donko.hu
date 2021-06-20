@@ -3,7 +3,7 @@
     <img id="leaves" src="@/assets/images/plants.png" />
     <img id="name" src="@/assets/images/név.png" />
     <nav>
-      <a href="#story">Történet</a>
+      <!-- <a href="#story">Történet</a> -->
       <a href="#church">Esküvő</a>
       <a href="#party">Lakodalom</a>
       <a href="#photos">Fényképek</a>

@@ -1,6 +1,6 @@
 <template>
   <Home />
-  <Story />
+  <!-- <Story /> -->
   <Church />
   <Party />
   <Photos />
@@ -11,7 +11,7 @@
 
 <script>
 import Home from '@/slides/Home.vue'
-import Story from '@/slides/Story.vue'
+// import Story from '@/slides/Story.vue'
 import Church from '@/slides/Church.vue'
 import Party from '@/slides/Party.vue'
 import Photos from '@/slides/Photos.vue'
@@ -21,7 +21,7 @@ export default {
   name: 'App',
   components: {
     Home,
-    Story,
+    // Story,
     Church,
     Party,
     Photos,
@@ -60,13 +60,15 @@ html, body, #app {
 
   box-sizing: border-box;
 
-  padding: 50PX;
+  padding: 50px;
   position: relative;
 
   scroll-snap-align: start;
+
+  overflow: hidden;
 }
 
-.slide h2{
+.slide h2 {
   font-size: 40px;
 }
 </style>

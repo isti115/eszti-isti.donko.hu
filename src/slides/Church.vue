@@ -1,10 +1,11 @@
 <template>
   <div id="church" class="slide location">
     <GoHome />
-    <div id="text">
+    <div class="text">
       <h2>Nepomuki Szent János Templom</h2>
-      <p>A templomi szertartás 16 órakkor kezdődik..</p>
-      <p>Utána szerettettel várunk a templomkertbe egy kis sütire, beszélgetésre és ...</p>
+      <p>A templomi szertartás 16 órakor kezdődik.</p>
+      <p>Utána szerettettel várunk a templomkertbe egy kis sütire, beszélgetésre és ünneplésre!</p>
+      <!-- <img src="@/assets/images/church.jpg" /> -->
     </div>
     <Map :options="mapOptions" />
   </div>
@@ -52,8 +53,18 @@ export default {
   justify-content: space-between;
 }
 
-.text{
+.text {
   width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .text {
+    font-size: 5vw;
+  }
 }
 
 .map {

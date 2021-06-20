@@ -1,10 +1,13 @@
 <template>
   <div id="party" class="slide location">
     <GoHome />
-  <div id="text">
+    <div class="text">
       <h2>Anna Tanya</h2>
-      <p>19 órakkor..</p>
-      <p>minden ...</p>
+      <p>
+        A szertartás utáni vacsora és a lakodalom Törökbálinton, az <em>Anna Tanyán</em> kerül megrendezésre.
+        A vacsora 19 órakor kezdődik, utána pedig közösen folytatjuk az ünneplést.
+      </p>
+      <!-- <p>minden ...</p> -->
     </div>
     <Map :options="mapOptions" />
   </div>
@@ -31,7 +34,7 @@ export default {
       icon: 'party',
       content: `
         <h3>Anna Tanya</h3>
-        <p>Törökbálint, Hegyalja u. ???., 2045</p>
+        <p>Törökbálint, Hegyalja u., 2045</p>
         <a
           class="navlink"
           href="https://www.google.com/maps/dir//Törökbálint,+Anna+Tanya"
@@ -52,8 +55,18 @@ export default {
   justify-content: space-between;
 }
 
-.text{
+.text {
   width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .text {
+    font-size: 5vw;
+  }
 }
 
 .map {
