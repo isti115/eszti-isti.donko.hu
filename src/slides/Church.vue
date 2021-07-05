@@ -54,23 +54,21 @@ export default {
 }
 
 .text {
-  width: 40%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  font-size: clamp(10px, 5vw, min(40px, 8vh));
 }
 
 @media (max-width: 800px) {
-  .text {
-    font-size: 5vw;
+  #church {
+    flex-direction: column;
   }
 }
 
-.map {
-  /* object-fit: contain; */
-  width: 40%;
-
-  /* margin-top: 3%; */
+.text, .map {
+  flex: 1;
+  margin: 1%;
 }
 </style>
