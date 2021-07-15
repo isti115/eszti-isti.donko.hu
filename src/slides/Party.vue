@@ -5,7 +5,15 @@
       <h2>Anna Tanya</h2>
       <p>
         A szertartás utáni vacsora és a lakodalom Törökbálinton, az <em>Anna Tanyán</em> kerül megrendezésre.
-        A vacsora 19 órakor kezdődik, utána pedig közösen folytatjuk az ünneplést.
+      </p>
+      <p>
+        A vacsora 19 órakor kezdődik, utána pedig közösen folytatjuk az ünneplést 21 órától.
+      </p>
+      <p>
+        Ha esetleg van kedved készülni valami zenés műsorszámmal, hogy tovább emeld az este fényét, azt örömmel fogadjuk! :)
+      </p>
+      <p>
+        A mulatság hajnali négykor pakolással zárul, akinek még marad energiája segíteni, az bátran vegyen részt ebben is! ;)
       </p>
       <!-- <p>minden ...</p> -->
     </div>
@@ -56,11 +64,17 @@ export default {
 }
 
 .text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
 
   font-size: clamp(10px, 5vw, min(40px, 8vh));
+
+  overflow-y: auto;
+}
+
+.text p {
+  margin-top: 10px;
 }
 
 @media (max-width: 800px) {

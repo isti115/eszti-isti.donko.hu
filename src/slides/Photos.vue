@@ -52,9 +52,28 @@ export default {
   #p6 { display: none; }
 }
 
+@media (min-width: 800px) and (max-height: 800px) {
+  #photos {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+      "p4 p1 p7"
+      "p4 p5 p7";
+  }
+
+  #p2 { display: none; }
+  #p3 { display: none; }
+  #p6 { display: none; }
+}
+
 img {
   width: 100%;
   height: 100%;
+
+  min-width: 0px;
+  min-height: 0px;
+
   object-fit: cover;
 }
 
