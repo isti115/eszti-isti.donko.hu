@@ -2,6 +2,7 @@
   <div id="home" class="slide">
     <img id="leaves" src="@/assets/images/plants.png" />
     <img id="name" src="@/assets/images/név.png" />
+    <div id="date">2021. 08. 21.</div>
     <nav>
       <!-- <a href="#story">Történet</a> -->
       <a href="#church">Esküvő</a>
@@ -19,7 +20,7 @@
   /* justify-content: space-between; */
   align-items: center;
   justify-items: center;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1.25fr 1fr 0.5fr 0.75fr;
 
   padding: 0;
 
@@ -49,6 +50,10 @@
   object-fit: contain;
 }
 
+#date {
+  font-size: 50px;
+}
+
 @media (max-width: 800px) {
   nav {
     flex-direction: column;
@@ -68,7 +73,7 @@
 nav {
   display: flex;
   justify-content: space-evenly;
-  padding: 30px;
+  padding-bottom: 30px;
 }
 
 nav a {
