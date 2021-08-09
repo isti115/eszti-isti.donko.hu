@@ -3,7 +3,7 @@
     <GoHome />
     <div class="text">
       <h2>Nepomuki Szent János Templom</h2>
-      <p>A templomi szertartás 16 órakor kezdődik.</p>
+      <p>A templomi nászmisés esküvői szertartás 16 órakor kezdődik.</p>
       <p>Utána szerettettel várunk a templomkertbe egy kis sütire, beszélgetésre és ünneplésre!</p>
       <!-- <img src="@/assets/images/church.jpg" /> -->
     </div>
