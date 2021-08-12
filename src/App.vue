@@ -5,6 +5,7 @@
   <Party />
   <Photos />
   <Countdown />
+  <Stream />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 </template>
@@ -16,6 +17,7 @@ import Church from '@/slides/Church.vue'
 import Party from '@/slides/Party.vue'
 import Photos from '@/slides/Photos.vue'
 import Countdown from '@/slides/Countdown.vue'
+import Stream from '@/slides/Stream.vue'
 
 export default {
   name: 'App',
@@ -25,7 +27,8 @@ export default {
     Church,
     Party,
     Photos,
-    Countdown
+    Countdown,
+    Stream
   }
 }
 </script>

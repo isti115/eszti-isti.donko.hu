@@ -9,6 +9,7 @@
       <a href="#party">Lakodalom</a>
       <a href="#photos">Fényképek</a>
       <a href="#countdown">Visszaszámlálás</a>
+      <a href="#stream">Közvetítés</a>
     </nav>
   </div>
 </template>
